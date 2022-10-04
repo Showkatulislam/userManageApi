@@ -1,9 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 const UserRoutes =require('./routes/users.routes')
-
+require('dotenv').config()
 const app=express()
-
+console.log(process.env)
 //middleware 
 app.use(express.json())
 app.use(cors())
